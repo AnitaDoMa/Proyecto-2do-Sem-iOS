@@ -10,11 +10,19 @@ import UIKit
 class ViewController: UIViewController {
     
 
-    let transparentView = UIView()
+
+    @IBOutlet var buttonFCB: UIButton!
+    
     
     override func viewDidLoad() {
     super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        buttonFCB.layer.cornerRadius = 10
+        buttonFCB.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        buttonFCB.layer.borderWidth = 1
+        buttonFCB.layer.backgroundColor = #colorLiteral(red: 0.7730752826, green: 0.9282240272, blue: 1, alpha: 1)
+    
     }
 
     }

@@ -48,6 +48,17 @@
                                     </tableView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WO-5g-JWN">
+                                <rect key="frame" x="38" y="404" width="339" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Facultad de Ciencias Biológicas (FCB)">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ukU-TE-fR7" kind="show" id="Bc2-x5-dNf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.96470588235294119" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
@@ -58,10 +69,47 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="aU3-hc-kqr"/>
+                    <connections>
+                        <outlet property="buttonFCB" destination="3WO-5g-JWN" id="nJn-6v-jsc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="923" y="52"/>
+            <point key="canvasLocation" x="921.73913043478262" y="51.5625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DJX-Nd-136">
+            <objects>
+                <viewController id="ukU-TE-fR7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Kl-EW-jH7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Facultad de Ciencias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKX-ma-xwJ">
+                                <rect key="frame" x="49" y="134" width="318" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Biológicas (FCB)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nw7-lq-hW3">
+                                <rect key="frame" x="78" y="178" width="258" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tlq-1q-edt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H3d-U7-0aD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q80-4e-MWV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923" y="711"/>
         </scene>
         <!--Home-->
         <scene sceneID="9f2-SA-28E">
@@ -85,7 +133,6 @@
         <!--Info.-->
         <scene sceneID="Dsk-5p-Dis">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bPf-OW-hmc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="XOF-oV-8VI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Info." image="info.circle" catalog="system" id="SEL-2l-PBl"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="seb-Bk-OCe">
@@ -96,6 +143,7 @@
                         <segue destination="Hzx-iu-PVg" kind="relationship" relationship="rootViewController" id="deG-Xj-x9V"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bPf-OW-hmc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1819" y="-638"/>
         </scene>
@@ -116,11 +164,11 @@
             </objects>
             <point key="canvasLocation" x="2703" y="-638"/>
         </scene>
-        <!--More-->
+        <!--Lugares-->
         <scene sceneID="9Eq-2m-vns">
             <objects>
                 <navigationController id="YZs-P9-XtF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="More" image="ellipsis.circle" catalog="system" id="gi0-2K-iBX">
+                    <tabBarItem key="tabBarItem" title="Lugares" image="location.fill" catalog="system" id="gi0-2K-iBX">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="o2j-C4-aOr">
@@ -177,15 +225,14 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Información" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hU-ha-wV9">
-                                <rect key="frame" x="104" y="173" width="207" height="79"/>
+                                <rect key="frame" x="103" y="173" width="208" height="79"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eCp-a1-pdQ">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eCp-a1-pdQ">
                                 <rect key="frame" x="42" y="333" width="330" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.76078431369999999" green="0.90588235289999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -201,12 +248,14 @@
                         <viewLayoutGuide key="safeArea" id="JT7-OW-A3N"/>
                         <color key="backgroundColor" red="0.96111148599999996" green="0.97233945129999999" blue="0.98039466139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="eCp-a1-pdQ" firstAttribute="leading" secondItem="JT7-OW-A3N" secondAttribute="leading" constant="4" id="9Xk-S8-7qm"/>
                             <constraint firstItem="2hU-ha-wV9" firstAttribute="leading" secondItem="JT7-OW-A3N" secondAttribute="leading" constant="103" id="DbR-Ol-faN"/>
                             <constraint firstItem="2hU-ha-wV9" firstAttribute="top" secondItem="JT7-OW-A3N" secondAttribute="top" constant="85" id="QCB-yT-mGx"/>
                             <constraint firstItem="2hU-ha-wV9" firstAttribute="leading" secondItem="JT7-OW-A3N" secondAttribute="leading" constant="104" id="TJV-TT-VIe"/>
                             <constraint firstItem="JT7-OW-A3N" firstAttribute="trailing" secondItem="2hU-ha-wV9" secondAttribute="trailing" constant="104" id="aMP-1e-CAU"/>
                             <constraint firstItem="JT7-OW-A3N" firstAttribute="trailing" secondItem="2hU-ha-wV9" secondAttribute="trailing" constant="103" id="epb-Yl-n7p"/>
                             <constraint firstItem="2hU-ha-wV9" firstAttribute="top" secondItem="JT7-OW-A3N" secondAttribute="top" constant="85" id="fUg-ie-IXB"/>
+                            <constraint firstItem="2hU-ha-wV9" firstAttribute="leading" secondItem="JT7-OW-A3N" secondAttribute="leading" constant="103" id="rOF-GM-8TR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Info." id="eQA-Uj-9tq"/>
@@ -259,7 +308,7 @@
             </objects>
             <point key="canvasLocation" x="2703" y="52"/>
         </scene>
-        <!--Más-->
+        <!--Lugares-->
         <scene sceneID="17U-bw-gPa">
             <objects>
                 <viewController id="Lef-8h-1m7" sceneMemberID="viewController">
@@ -267,7 +316,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Más" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKJ-9E-K1z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lugares" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKJ-9E-K1z">
                                 <rect key="frame" x="103" y="173" width="208" height="79"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="36"/>
                                 <nil key="textColor"/>
@@ -297,7 +346,7 @@
                             <constraint firstItem="HiG-ez-t5L" firstAttribute="trailing" secondItem="mKJ-9E-K1z" secondAttribute="trailing" constant="103" id="LNj-wj-cvf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Más" id="eg4-dc-l0D"/>
+                    <navigationItem key="navigationItem" title="Lugares" id="eg4-dc-l0D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FfG-Qk-QHe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -306,9 +355,9 @@
     </scenes>
     <resources>
         <image name="Background" width="122" height="85"/>
-        <image name="ellipsis.circle" catalog="system" width="128" height="121"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="location.fill" catalog="system" width="128" height="121"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
