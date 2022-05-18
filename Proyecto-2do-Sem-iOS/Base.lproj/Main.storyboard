@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="921.73913043478262" y="51.5625"/>
         </scene>
-        <!--View Controller-->
+        <!--FCB-->
         <scene sceneID="DJX-Nd-136">
             <objects>
-                <viewController id="ukU-TE-fR7" sceneMemberID="viewController">
+                <viewController id="ukU-TE-fR7" customClass="FCB" customModule="Proyecto_2do_Sem_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Kl-EW-jH7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,18 +102,70 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Images" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2yA-7I-bsP">
-                                <rect key="frame" x="-74" y="265" width="563" height="112"/>
+                                <rect key="frame" x="-64" y="268" width="542" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkq-Hn-QSQ">
+                                <rect key="frame" x="38" y="773" width="338" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Cómo llegar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2AV-aZ-aFr" kind="show" id="DvX-PH-Flo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tlq-1q-edt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hkq-Hn-QSQ" firstAttribute="leading" secondItem="tlq-1q-edt" secondAttribute="leading" constant="38" id="6yn-ef-LwQ"/>
+                            <constraint firstItem="tlq-1q-edt" firstAttribute="trailing" secondItem="hkq-Hn-QSQ" secondAttribute="trailing" constant="38" id="TfP-Tj-W0b"/>
+                            <constraint firstItem="tlq-1q-edt" firstAttribute="bottom" secondItem="hkq-Hn-QSQ" secondAttribute="bottom" constant="63" id="btC-ct-spS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="H3d-U7-0aD"/>
+                    <connections>
+                        <outlet property="comoLlegar" destination="hkq-Hn-QSQ" id="QCA-4P-PEq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q80-4e-MWV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="921.73913043478262" y="710.49107142857144"/>
+            <point key="canvasLocation" x="921.73913043478262" y="758.70535714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="F03-ke-FpV">
+            <objects>
+                <viewController id="2AV-aZ-aFr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p7z-02-03X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Facultad de Ciencias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9s-um-2KN">
+                                <rect key="frame" x="48" y="132" width="318" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Biológicas (FCB)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2q-YK-hkK">
+                                <rect key="frame" x="77" y="176" width="258" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hbi-ZJ-uyZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gvf-Bb-Hcp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wj-7G-bpl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="1463"/>
         </scene>
         <!--Home-->
         <scene sceneID="9f2-SA-28E">
@@ -210,7 +262,7 @@
         <!--Info.-->
         <scene sceneID="QEs-08-Y2g">
             <objects>
-                <viewController id="Hzx-iu-PVg" sceneMemberID="viewController">
+                <viewController id="Hzx-iu-PVg" customClass="Info" customModule="Proyecto_2do_Sem_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JWo-ds-INt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
