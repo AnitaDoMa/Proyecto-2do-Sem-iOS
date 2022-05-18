@@ -101,6 +101,10 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Images" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2yA-7I-bsP">
+                                <rect key="frame" x="-74" y="265" width="563" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tlq-1q-edt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -109,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q80-4e-MWV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="923" y="711"/>
+            <point key="canvasLocation" x="921.73913043478262" y="710.49107142857144"/>
         </scene>
         <!--Home-->
         <scene sceneID="9f2-SA-28E">
@@ -355,6 +359,7 @@
     </scenes>
     <resources>
         <image name="Background" width="122" height="85"/>
+        <image name="Images" width="1798" height="561"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="location.fill" catalog="system" width="128" height="121"/>
