@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -113,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q80-4e-MWV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="922" y="-639"/>
+            <point key="canvasLocation" x="922" y="-640"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="F03-ke-FpV">
@@ -172,24 +173,11 @@
         <!--Info.-->
         <scene sceneID="QEs-08-Y2g">
             <objects>
-                <viewController id="Hzx-iu-PVg" customClass="Info" customModule="Proyecto_2do_Sem_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Hzx-iu-PVg" customClass="Mapas" customModule="Proyecto_2do_Sem_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JWo-ds-INt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3XV-go-ajh">
-                                <rect key="frame" x="63" y="363" width="277" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <size key="titleShadowOffset" width="8" height="8"/>
-                                <state key="normal" title="¿Cómo funciona?">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mapas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hU-ha-wV9">
                                 <rect key="frame" x="103" y="173" width="208" height="79"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="36"/>
@@ -197,13 +185,11 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preguntas frecuentes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdr-Zy-S8H">
-                                <rect key="frame" x="138" y="260" width="139" height="17"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DqU-uC-Igw">
+                                <rect key="frame" x="56" y="291" width="303" height="268"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JT7-OW-A3N"/>
                         <color key="backgroundColor" red="0.96111148599999996" green="0.97233945129999999" blue="0.98039466139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -219,10 +205,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Mapas" image="map" catalog="system" id="1ol-cU-5oV"/>
                     <navigationItem key="navigationItem" title="Info." id="eQA-Uj-9tq"/>
+                    <connections>
+                        <outlet property="container" destination="DqU-uC-Igw" id="w8L-aX-XwD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4tb-Yb-X0w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1819" y="-640"/>
+            <point key="canvasLocation" x="1818.840579710145" y="-640.17857142857144"/>
         </scene>
         <!--Mapas-->
         <scene sceneID="3Ps-qq-4FL">
@@ -294,5 +283,8 @@
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

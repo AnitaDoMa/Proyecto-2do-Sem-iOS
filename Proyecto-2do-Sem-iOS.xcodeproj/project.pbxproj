@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3040A89028356A3900B0A2E7 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3040A88F28356A3900B0A2E7 /* Info.swift */; };
+		3040A89028356A3900B0A2E7 /* Mapas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3040A88F28356A3900B0A2E7 /* Mapas.swift */; };
+		3053094B283C1CB700371B3B /* MapasUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053094A283C1CB700371B3B /* MapasUI.swift */; };
 		30874DBD283589C00082EA6F /* FCB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30874DBC283589C00082EA6F /* FCB.swift */; };
 		3097603F282300E000E28FD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3097603E282300E000E28FD3 /* AppDelegate.swift */; };
 		30976041282300E000E28FD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30976040282300E000E28FD3 /* SceneDelegate.swift */; };
@@ -15,13 +16,13 @@
 		30976046282300E000E28FD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30976044282300E000E28FD3 /* Main.storyboard */; };
 		30976048282300E200E28FD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30976047282300E200E28FD3 /* Assets.xcassets */; };
 		3097604B282300E200E28FD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30976049282300E200E28FD3 /* LaunchScreen.storyboard */; };
-		30B217852838063900FA7CD7 /* Mapas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B217842838063900FA7CD7 /* Mapas.swift */; };
 		30B217872838064400FA7CD7 /* Lugares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B217862838064400FA7CD7 /* Lugares.swift */; };
 		30CE028C283BF45600270337 /* Bienvenido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CE028B283BF45600270337 /* Bienvenido.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3040A88F28356A3900B0A2E7 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		3040A88F28356A3900B0A2E7 /* Mapas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapas.swift; sourceTree = "<group>"; };
+		3053094A283C1CB700371B3B /* MapasUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapasUI.swift; sourceTree = "<group>"; };
 		30874DBC283589C00082EA6F /* FCB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCB.swift; sourceTree = "<group>"; };
 		3097603B282300DF00E28FD3 /* Proyecto-2do-Sem-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proyecto-2do-Sem-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3097603E282300E000E28FD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		30976047282300E200E28FD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3097604A282300E200E28FD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3097604C282300E300E28FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30B217842838063900FA7CD7 /* Mapas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapas.swift; sourceTree = "<group>"; };
 		30B217862838064400FA7CD7 /* Lugares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lugares.swift; sourceTree = "<group>"; };
 		30CE028B283BF45600270337 /* Bienvenido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bienvenido.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,14 +72,22 @@
 				30976044282300E000E28FD3 /* Main.storyboard */,
 				30CE028B283BF45600270337 /* Bienvenido.swift */,
 				30874DBC283589C00082EA6F /* FCB.swift */,
-				3040A88F28356A3900B0A2E7 /* Info.swift */,
-				30B217842838063900FA7CD7 /* Mapas.swift */,
+				30CE02FF283C196400270337 /* Mapas */,
 				30B217862838064400FA7CD7 /* Lugares.swift */,
 				30976047282300E200E28FD3 /* Assets.xcassets */,
 				30976049282300E200E28FD3 /* LaunchScreen.storyboard */,
 				3097604C282300E300E28FD3 /* Info.plist */,
 			);
 			path = "Proyecto-2do-Sem-iOS";
+			sourceTree = "<group>";
+		};
+		30CE02FF283C196400270337 /* Mapas */ = {
+			isa = PBXGroup;
+			children = (
+				3040A88F28356A3900B0A2E7 /* Mapas.swift */,
+				3053094A283C1CB700371B3B /* MapasUI.swift */,
+			);
+			name = Mapas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,12 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3053094B283C1CB700371B3B /* MapasUI.swift in Sources */,
 				30976043282300E000E28FD3 /* Home.swift in Sources */,
-				3040A89028356A3900B0A2E7 /* Info.swift in Sources */,
+				3040A89028356A3900B0A2E7 /* Mapas.swift in Sources */,
 				30B217872838064400FA7CD7 /* Lugares.swift in Sources */,
 				3097603F282300E000E28FD3 /* AppDelegate.swift in Sources */,
 				30874DBD283589C00082EA6F /* FCB.swift in Sources */,
-				30B217852838063900FA7CD7 /* Mapas.swift in Sources */,
 				30CE028C283BF45600270337 /* Bienvenido.swift in Sources */,
 				30976041282300E000E28FD3 /* SceneDelegate.swift in Sources */,
 			);
