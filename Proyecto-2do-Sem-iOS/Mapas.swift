@@ -9,6 +9,8 @@ import UIKit
 
 class Mapas: UIViewController {
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     let maps = ["Seleccione un mapa", "FCB - General", "FCB - Unidad A - Primer Piso", "FCB - Unidad A - Segundo Piso", "FCB - Unidad A - Tercer Piso", "FCB - Unidad C", "FCB - Unidad D - Primer Piso", "FCB - Unidad D - Segundo Piso", "FCB - Unidad D - Tercer Piso"]
     
     @IBOutlet weak var chooseMapPickerView: UIPickerView!
@@ -29,11 +31,17 @@ class Mapas: UIViewController {
         chooseMapPickerView.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         chooseMapPickerView.layer.cornerRadius = 8
         
+        scrollView.maximumZoomScale = 4
+        scrollView.minimumZoomScale = 1
+        
+        scrollView.delegate = self
+        
     }
+    
 }
 
 
-extension Mapas: UIPickerViewDelegate, UIPickerViewDataSource {
+extension Mapas: UIPickerViewDelegate, UIPickerViewDataSource, UIScrollViewDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -49,6 +57,9 @@ extension Mapas: UIPickerViewDelegate, UIPickerViewDataSource {
         labelMap.text = maps[row]
         mapImage.image = UIImage(named: maps[row])
         
+    }
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return mapImage
     }
     
 }
