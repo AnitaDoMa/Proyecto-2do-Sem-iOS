@@ -26,13 +26,14 @@ class Lugares: UIViewController {
     @IBOutlet var HLibUniv: UILabel!
     @IBOutlet var Bib: UILabel!
     @IBOutlet var HBib: UILabel!
-
-    
+    @IBOutlet var CapAlf: UILabel!
     @IBOutlet var Cred: UILabel!
     @IBOutlet var HCred: UILabel!
     @IBOutlet var CenEv: UILabel!
     @IBOutlet var HCenEv: UILabel!
-    @IBOutlet var CapAlf: UILabel!
+    
+   
+    
     @IBOutlet var HCapAlf: UILabel!
     @IBOutlet var MesDir: UILabel!
     @IBOutlet var HMesDir: UILabel!

@@ -177,13 +177,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mapas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hU-ha-wV9">
-                                <rect key="frame" x="103" y="129" width="208" height="79"/>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihh-ik-d9R">
                                 <rect key="frame" x="352" y="92" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -192,7 +185,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rhs-MX-JHe">
-                                <rect key="frame" x="20" y="227" width="374" height="76"/>
+                                <rect key="frame" x="20" y="216" width="374" height="76"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2aW-s1-SvZ">
@@ -207,18 +200,17 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="h5L-jQ-WHN"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="tMw-1j-MqJ"/>
                             </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mapas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hU-ha-wV9">
+                                <rect key="frame" x="151" y="129" width="112.33333333333331" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JT7-OW-A3N"/>
                         <color key="backgroundColor" red="0.96111148599999996" green="0.97233945129999999" blue="0.98039466139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="2hU-ha-wV9" firstAttribute="leading" secondItem="JT7-OW-A3N" secondAttribute="leading" constant="103" id="DbR-Ol-faN"/>
-                            <constraint firstItem="2hU-ha-wV9" firstAttribute="top" secondItem="JT7-OW-A3N" secondAttribute="top" constant="85" id="QCB-yT-mGx"/>
-                            <constraint firstItem="2hU-ha-wV9" firstAttribute="leading" secondItem="JT7-OW-A3N" secondAttribute="leading" constant="104" id="TJV-TT-VIe"/>
-                            <constraint firstItem="JT7-OW-A3N" firstAttribute="trailing" secondItem="2hU-ha-wV9" secondAttribute="trailing" constant="104" id="aMP-1e-CAU"/>
-                            <constraint firstItem="JT7-OW-A3N" firstAttribute="trailing" secondItem="2hU-ha-wV9" secondAttribute="trailing" constant="103" id="epb-Yl-n7p"/>
-                            <constraint firstItem="2hU-ha-wV9" firstAttribute="top" secondItem="JT7-OW-A3N" secondAttribute="top" constant="85" id="fUg-ie-IXB"/>
-                            <constraint firstItem="2hU-ha-wV9" firstAttribute="leading" secondItem="JT7-OW-A3N" secondAttribute="leading" constant="103" id="rOF-GM-8TR"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mapas" image="map" catalog="system" id="1ol-cU-5oV"/>
                     <navigationItem key="navigationItem" title="Info." id="eQA-Uj-9tq"/>
@@ -226,7 +218,7 @@
                         <outlet property="chooseMapPickerView" destination="rhs-MX-JHe" id="QWe-lf-Xlz"/>
                         <outlet property="labelMap" destination="Ihh-ik-d9R" id="OHp-RZ-5n3"/>
                         <outlet property="mapImage" destination="FPe-Jz-XEi" id="tIv-tX-mRF"/>
-                        <outlet property="scrollView" destination="2aW-s1-SvZ" id="xGR-7U-tkU"/>
+                        <outlet property="scrollView" destination="2aW-s1-SvZ" id="wDg-H6-M5F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4tb-Yb-X0w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -318,13 +310,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Capilla Alfonsina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l59-Gd-dHW">
-                                <rect key="frame" x="33" y="566" width="172" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 8:00 am - 4:00 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ftp-wJ-cab">
                                 <rect key="frame" x="33" y="585" width="172" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -402,17 +387,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Centro de Evaluaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q15-ds-qow">
-                                <rect key="frame" x="213" y="566" width="172" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 10:00 am - 12:00 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2R-4e-hYF">
+                                <rect key="frame" x="213" y="586" width="172" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Capilla Alfonsina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ol-d0-nfH">
+                                <rect key="frame" x="33" y="566" width="172" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 10:00 am - 12:00 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2R-4e-hYF">
-                                <rect key="frame" x="213" y="586" width="172" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Centro de Evaluaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTg-Fh-FBh">
+                                <rect key="frame" x="213" y="566" width="172" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -430,8 +422,8 @@
                     <connections>
                         <outlet property="Bib" destination="wcX-al-8ek" id="sTr-mW-T4y"/>
                         <outlet property="Caadi" destination="4co-Ii-Nyo" id="KdK-ob-LVt"/>
-                        <outlet property="CapAlf" destination="l59-Gd-dHW" id="0nQ-16-9le"/>
-                        <outlet property="CenEv" destination="q15-ds-qow" id="po6-yF-BpR"/>
+                        <outlet property="CapAlf" destination="3ol-d0-nfH" id="R7d-DB-Xab"/>
+                        <outlet property="CenEv" destination="fTg-Fh-FBh" id="TCQ-5V-d0a"/>
                         <outlet property="Cred" destination="5Fu-CH-AE3" id="j1I-EU-UZd"/>
                         <outlet property="DepBec" destination="GQw-wO-s72" id="I2o-xO-cZe"/>
                         <outlet property="HBib" destination="iWM-7K-v96" id="1CI-9q-cQU"/>
