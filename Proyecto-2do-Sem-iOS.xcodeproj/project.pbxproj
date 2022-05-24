@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3040A89028356A3900B0A2E7 /* Mapas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3040A88F28356A3900B0A2E7 /* Mapas.swift */; };
-		3053094B283C1CB700371B3B /* MapasUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3053094A283C1CB700371B3B /* MapasUI.swift */; };
 		30874DBD283589C00082EA6F /* FCB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30874DBC283589C00082EA6F /* FCB.swift */; };
 		3097603F282300E000E28FD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3097603E282300E000E28FD3 /* AppDelegate.swift */; };
 		30976041282300E000E28FD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30976040282300E000E28FD3 /* SceneDelegate.swift */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		3040A88F28356A3900B0A2E7 /* Mapas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapas.swift; sourceTree = "<group>"; };
-		3053094A283C1CB700371B3B /* MapasUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapasUI.swift; sourceTree = "<group>"; };
 		30874DBC283589C00082EA6F /* FCB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCB.swift; sourceTree = "<group>"; };
 		3097603B282300DF00E28FD3 /* Proyecto-2do-Sem-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proyecto-2do-Sem-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3097603E282300E000E28FD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				3040A88F28356A3900B0A2E7 /* Mapas.swift */,
-				3053094A283C1CB700371B3B /* MapasUI.swift */,
 			);
 			name = Mapas;
 			sourceTree = "<group>";
@@ -160,7 +157,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3053094B283C1CB700371B3B /* MapasUI.swift in Sources */,
 				30976043282300E000E28FD3 /* Home.swift in Sources */,
 				3040A89028356A3900B0A2E7 /* Mapas.swift in Sources */,
 				30B217872838064400FA7CD7 /* Lugares.swift in Sources */,

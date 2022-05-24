@@ -10,17 +10,10 @@ import SwiftUI
 
 class Mapas: UIViewController {
     
-    @IBOutlet weak var container: UIView!
     
     override func viewDidLoad() {
-    super.viewDidLoad()
+        super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        let childView = UIHostingController(rootView: MapasUI())
-        addChild(childView)
-        childView.view.frame = container.bounds
-        container.addSubview(childView.view)
-        
-        
+
     }
 }
