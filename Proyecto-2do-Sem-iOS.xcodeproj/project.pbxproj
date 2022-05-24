@@ -17,6 +17,8 @@
 		3097604B282300E200E28FD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30976049282300E200E28FD3 /* LaunchScreen.storyboard */; };
 		30B217872838064400FA7CD7 /* Lugares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B217862838064400FA7CD7 /* Lugares.swift */; };
 		30CE028C283BF45600270337 /* Bienvenido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CE028B283BF45600270337 /* Bienvenido.swift */; };
+		30E32ADB283D73D60048D2A3 /* FCBPuntosRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E32ADA283D73D60048D2A3 /* FCBPuntosRef.swift */; };
+		30E32ADD283D770D0048D2A3 /* direccionJiji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E32ADC283D770D0048D2A3 /* direccionJiji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		3097604C282300E300E28FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B217862838064400FA7CD7 /* Lugares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lugares.swift; sourceTree = "<group>"; };
 		30CE028B283BF45600270337 /* Bienvenido.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bienvenido.swift; sourceTree = "<group>"; };
+		30E32ADA283D73D60048D2A3 /* FCBPuntosRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCBPuntosRef.swift; sourceTree = "<group>"; };
+		30E32ADC283D770D0048D2A3 /* direccionJiji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = direccionJiji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				30976040282300E000E28FD3 /* SceneDelegate.swift */,
 				30976042282300E000E28FD3 /* Home.swift */,
 				30976044282300E000E28FD3 /* Main.storyboard */,
+				30E32ADC283D770D0048D2A3 /* direccionJiji.swift */,
+				30E32ADA283D73D60048D2A3 /* FCBPuntosRef.swift */,
 				30CE028B283BF45600270337 /* Bienvenido.swift */,
 				30874DBC283589C00082EA6F /* FCB.swift */,
 				30CE02FF283C196400270337 /* Mapas */,
@@ -163,7 +169,9 @@
 				3097603F282300E000E28FD3 /* AppDelegate.swift in Sources */,
 				30874DBD283589C00082EA6F /* FCB.swift in Sources */,
 				30CE028C283BF45600270337 /* Bienvenido.swift in Sources */,
+				30E32ADB283D73D60048D2A3 /* FCBPuntosRef.swift in Sources */,
 				30976041282300E000E28FD3 /* SceneDelegate.swift in Sources */,
+				30E32ADD283D770D0048D2A3 /* direccionJiji.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

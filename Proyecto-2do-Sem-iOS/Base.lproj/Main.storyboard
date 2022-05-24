@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -82,8 +83,9 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkq-Hn-QSQ">
-                                <rect key="frame" x="38" y="773" width="338" height="27"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkq-Hn-QSQ">
+                                <rect key="frame" x="31" y="647" width="352" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Cómo llegar">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -93,61 +95,184 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Images" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2yA-7I-bsP">
-                                <rect key="frame" x="24" y="277" width="366" height="111"/>
+                                <rect key="frame" x="24" y="263" width="366" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mMJ-JR-GVA">
+                                <rect key="frame" x="24" y="485" width="359" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwf-SB-MPq">
+                                <rect key="frame" x="182" y="92" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.95725208520000005" green="0.97233742479999996" blue="0.98039478059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5b-JO-gJJ">
+                                <rect key="frame" x="23" y="396" width="367" height="66"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tlq-1q-edt"/>
                         <color key="backgroundColor" red="0.96111148599999996" green="0.97233945129999999" blue="0.98039466139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="hkq-Hn-QSQ" firstAttribute="leading" secondItem="tlq-1q-edt" secondAttribute="leading" constant="38" id="6yn-ef-LwQ"/>
-                            <constraint firstItem="tlq-1q-edt" firstAttribute="trailing" secondItem="hkq-Hn-QSQ" secondAttribute="trailing" constant="38" id="TfP-Tj-W0b"/>
-                            <constraint firstItem="tlq-1q-edt" firstAttribute="bottom" secondItem="hkq-Hn-QSQ" secondAttribute="bottom" constant="63" id="btC-ct-spS"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="UmB-eP-Nxg"/>
                     <navigationItem key="navigationItem" id="H3d-U7-0aD"/>
                     <connections>
                         <outlet property="comoLlegar" destination="hkq-Hn-QSQ" id="QCA-4P-PEq"/>
+                        <outlet property="labelSalones" destination="rwf-SB-MPq" id="Hk3-lQ-GhE"/>
+                        <outlet property="pickerViewFCB" destination="i5b-JO-gJJ" id="I59-bv-Ucx"/>
+                        <outlet property="salonesImg" destination="mMJ-JR-GVA" id="pcl-Io-fyf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q80-4e-MWV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="922" y="-617"/>
+            <point key="canvasLocation" x="921.73913043478262" y="-617.11956521739137"/>
         </scene>
-        <!--View Controller-->
+        <!--Puntos Ref-->
         <scene sceneID="F03-ke-FpV">
             <objects>
-                <viewController id="2AV-aZ-aFr" sceneMemberID="viewController">
+                <viewController id="2AV-aZ-aFr" customClass="FCBPuntosRef" customModule="Proyecto_2do_Sem_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p7z-02-03X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Facultad de Ciencias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9s-um-2KN">
-                                <rect key="frame" x="48" y="132" width="318" height="70"/>
+                                <rect key="frame" x="108" y="64" width="199" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Biológicas (FCB)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2q-YK-hkK">
-                                <rect key="frame" x="77" y="176" width="258" height="70"/>
+                                <rect key="frame" x="122" y="100" width="161" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2su-Bl-wX5">
+                                <rect key="frame" x="20" y="673" width="364" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ir">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JTR-Jv-nAj" kind="show" id="3Yy-De-eCX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="      Destino: DS102" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPv-Rg-JkJ">
+                                <rect key="frame" x="20" y="159" width="364" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oYW-xf-DiJ">
+                                <rect key="frame" x="20" y="292" width="364" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOe-cP-6aU">
+                                <rect key="frame" x="11" y="93" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.95725208520000005" green="0.97233742479999996" blue="0.98039478059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9I7-Zh-BpW">
+                                <rect key="frame" x="10" y="207" width="384" height="63"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iK7-PN-vQf">
+                                <rect key="frame" x="20" y="164" width="24" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.63857092039999996" green="0.1822662417" blue="0.028688596520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hbi-ZJ-uyZ"/>
                         <color key="backgroundColor" red="0.95725208520000005" green="0.97233742479999996" blue="0.98039478059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="gvf-Bb-Hcp"/>
+                    <connections>
+                        <outlet property="IrButton" destination="2su-Bl-wX5" id="n2p-Rw-Wbu"/>
+                        <outlet property="destinoLabel" destination="zPv-Rg-JkJ" id="18f-eL-jKr"/>
+                        <outlet property="imagePuntosRef" destination="oYW-xf-DiJ" id="WOK-g4-92U"/>
+                        <outlet property="labelPuntosRef" destination="dOe-cP-6aU" id="ewd-s8-a7I"/>
+                        <outlet property="pickerViewPuntosRef" destination="9I7-Zh-BpW" id="Ljw-z8-yUS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wj-7G-bpl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="922" y="133"/>
+            <point key="canvasLocation" x="921.73913043478262" y="110.86956521739131"/>
+        </scene>
+        <!--Direccion Jiji-->
+        <scene sceneID="p52-sM-CW5">
+            <objects>
+                <viewController id="JTR-Jv-nAj" customClass="direccionJiji" customModule="Proyecto_2do_Sem_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="69n-8g-Fz3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="     Destino: DS102" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw2-J0-mrB">
+                                <rect key="frame" x="37" y="180" width="346" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="     Punto de referencia: Biblioteca" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2A-2s-BAl">
+                                <rect key="frame" x="37" y="220" width="346" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7Ve-k8-vup">
+                                <rect key="frame" x="37" y="186" width="24" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.63857092038549557" green="0.18226624172061884" blue="0.0286885965172613" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Direccion" translatesAutoresizingMaskIntoConstraints="NO" id="5UE-Dp-bTT">
+                                <rect key="frame" x="12" y="283" width="391" height="399"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Facultad de Ciencias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bg8-S4-gMg">
+                                <rect key="frame" x="108" y="72" width="199" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Biológicas (FCB)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXT-vS-Z9I">
+                                <rect key="frame" x="127" y="112" width="161" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zDx-im-6aY">
+                                <rect key="frame" x="37" y="225" width="24" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dRt-5H-tm3"/>
+                        <color key="backgroundColor" red="0.95725208520000005" green="0.97233742479999996" blue="0.98039478059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0E7-7w-du2"/>
+                    <connections>
+                        <outlet property="BibliotecaLabel" destination="d2A-2s-BAl" id="7Yc-lY-cWc"/>
+                        <outlet property="labelDestino" destination="Bw2-J0-mrB" id="F4i-mu-7xV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DKw-cj-7dS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921.73913043478262" y="825.81521739130437"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="elc-8x-2WO">
@@ -471,9 +596,17 @@
     </scenes>
     <resources>
         <image name="Background" width="122" height="85"/>
+        <image name="Direccion" width="1413" height="1303"/>
         <image name="Images" width="1798" height="561"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="map" catalog="system" width="128" height="110"/>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

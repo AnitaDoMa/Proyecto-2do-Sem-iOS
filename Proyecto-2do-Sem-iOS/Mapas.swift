@@ -27,10 +27,6 @@ class Mapas: UIViewController {
         // Do any additional setup after loading the view.
         chooseMapPickerView.delegate = self
         chooseMapPickerView.dataSource = self
-        chooseMapPickerView.layer.backgroundColor = #colorLiteral(red: 0.7730752826, green: 0.9282240272, blue: 1, alpha: 1)
-        chooseMapPickerView.layer.borderWidth = 1
-        chooseMapPickerView.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        chooseMapPickerView.layer.cornerRadius = 8
         
         scrollView.maximumZoomScale = 5
         scrollView.minimumZoomScale = 1
